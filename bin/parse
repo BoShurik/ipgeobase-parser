@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+/**
+ * User: boshurik
+ * Date: 28.10.16
+ * Time: 16:30
+ */
+
+/** @var \Symfony\Component\Console\Application $application */
+$application = require_once __DIR__ . '/../app/app.php';
+$application->run();

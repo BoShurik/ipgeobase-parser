@@ -1,0 +1,26 @@
+{
+    "name": "boshurik/ipgeobase-parser",
+    "description": "IPGeobase parser",
+    "minimum-stability": "stable",
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "BoShurik",
+            "email": "boshurik@amicus.ru"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "BoShurik\\IPGeoBase\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=5.6",
+        "symfony/console": "~3.1",
+        "symfony/event-dispatcher": "~3.1",
+        "pimple/pimple": "~3.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "~3.1"
+    }
+}
