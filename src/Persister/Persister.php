@@ -75,11 +75,11 @@ class Persister implements PersisterInterface
         $city = $event->getCity();
         $statement = $this->getCityStatement();
         $statement->bindValue('id', $city->getId(), \PDO::PARAM_INT);
-        $statement->bindValue('title', $city->getId(), \PDO::PARAM_STR);
-        $statement->bindValue('area', $city->getId(), \PDO::PARAM_STR);
-        $statement->bindValue('region', $city->getId(), \PDO::PARAM_STR);
-        $statement->bindValue('latitude', $city->getId(), \PDO::PARAM_STR);
-        $statement->bindValue('longitude', $city->getId(), \PDO::PARAM_STR);
+        $statement->bindValue('title', $city->getTitle(), \PDO::PARAM_STR);
+        $statement->bindValue('area', $city->getArea(), \PDO::PARAM_STR);
+        $statement->bindValue('region', $city->getRegion(), \PDO::PARAM_STR);
+        $statement->bindValue('latitude', $city->getLatitude(), \PDO::PARAM_STR);
+        $statement->bindValue('longitude', $city->getLongitude(), \PDO::PARAM_STR);
 
         $this->executeStatement($statement);
     }
